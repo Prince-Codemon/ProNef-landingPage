@@ -13,9 +13,20 @@ const Download = () => {
           <p className={`${styles.pText} ${styles.blackText}`}>
             Get the whole source code on github
           </p>
-          <button className={styles.btnPrimary}>Source Code</button>
+          <button
+            className={styles.btnPrimary}
+            onClick={() =>
+              window.open("https://github.com/Prince-Codemon/ProNef", "_blank")
+            }
+          >
+            Source Code
+          </button>
           <div className={styles.flexCenter}>
-            <img src={assets.scene} alt="download_png" className={styles.fullImg} />
+            <img
+              src={assets.scene}
+              alt="download_png"
+              className={styles.fullImg}
+            />
           </div>
         </div>
       </div>
